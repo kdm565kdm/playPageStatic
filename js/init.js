@@ -1,6 +1,10 @@
 
-
-
+var Datas;
+ $.getJSON ("config.json", function (data)  
+        {  
+        	Datas=data;
+			console.log(data); 
+        });  
 var fps=Datas.fps;
 var second=1000;
 var speed=second/fps;//1000/24~41一秒二十四帧
